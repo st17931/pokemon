@@ -1,13 +1,36 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchData, fetchMoreData } from "../Redux/cardSlice/cardSlice";
 import Card from "./Card";
-import React from "react";
+import React, { useEffect } from "react";
 
 
 const CardGrid = ()=>{
+    const dispatch = useDispatch();
     const state = useSelector((state) => state.card.items)
     const loading = useSelector((state)=> state.card.isLoading);
 
     console.log("state in the cardGrid Component", state);
+
+
+    const handleScroll = () => {
+        if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+          dispatch(fetchMoreData());
+        }
+      }
+    
+     
+    
+      useEffect(() => {
+        dispatch(fetchData());
+      }, []);
+    
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        }
+      }, []);
 
     return(
         
