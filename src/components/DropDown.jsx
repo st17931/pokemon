@@ -32,16 +32,22 @@ const DropDown = () => {
 
 
     return (
-        <div className="dropdown w-25">
+        <div 
+        className="dropdown w-25"
+        >
             <button
                 className="btn btn-lg btn-info dropdown-toggle w-100 d-flex justify-content-between align-items-center"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
             >
-                <span>{selectedType || 'Type'}</span>
+                <span>
+                    {selectedType || 'Type'}
+                </span>
             </button>
-            <ul className="dropdown-menu">
+            <ul 
+            className="dropdown-menu"
+            >
                 {types.map((type) => (
                     <li key={type} className="dropdown-item" onClick={handleTypeChange}>
                         {type}

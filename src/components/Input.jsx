@@ -15,13 +15,13 @@ const Input = ()=>{
     };
 
     return  <input
-    type="text"
-    placeholder="Enter id or name of pokemon and press Enter"
-    value={inputValue} 
-    className='w-50'
-    onChange={(e) => setInputValue(e.target.value)}
-    onKeyDown={handleKeyPress}
-  />
+            type="text"
+            placeholder="Enter id or name of pokemon and press Enter"
+            value={inputValue} 
+            className='w-50'
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyPress}
+            />
 }
 
 export default Input
