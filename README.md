@@ -13,7 +13,7 @@ State of the art Pokedex application that allows user to retrieve, search and se
 
 ## Technology used
 ### React
-### Redux
+### Redux Toolkit
 ### Bootstrap
 
 ## Deployed Link
