@@ -1,8 +1,20 @@
-# React + Vite
+# POKEDEX APPLICATION
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+State of the art Pokedex application that allows user to retrieve, search and see the statistics of the various pokemon displayed.
 
-Currently, two official plugins are available:
+[Used the Pokemon Api to fetch data]([http://example.com](https://pokeapi.co/)https://pokeapi.co/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## App Components
+
+-### Search Bar-For Searching the Pokemons by name or id
+-### Infinite Scroll for Pokemon Listing - Displayed an infinite scrollable list of Pokemons.
+-### Pokemon Detail Modal - Detailed Pokemon stats modal on card click.
+-### Real-time Type Filter: Implemented filter functionality by card type
+
+## Technology used
+-### React
+-### Redux
+-### Bootstrap
+
+## Deployed Link
+[Click here to see live demo](https://endearing-axolotl-59f01e.netlify.app/)
