@@ -9,7 +9,7 @@ const CardGrid = ()=>{
     const state = useSelector((state) => state.card.items)
     const loading = useSelector((state)=> state.card.isLoading);
 
-    console.log("state in the cardGrid Component", state);
+    //console.log("state in the cardGrid Component", state);
 
 
     const handleScroll = () => {
@@ -35,7 +35,9 @@ const CardGrid = ()=>{
     return(
         
         
-        <div className="row gx-0">
+        <div 
+        className="row gx-0"
+        >
         {state.map((singleCard)=>(
             <Card  key={singleCard.id} name={singleCard.forms[0].name} id={singleCard.id} type={singleCard.types} stats={singleCard.stats}/> 
         ))}
